@@ -52,4 +52,12 @@ nav a:first-of-type {
   border: 0;
 }
 
+h1{
+  margin: 5% 10%;
+  font-size: 3rem;
+  color: hsla(160, 100%, 37%, 1);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
 </style>
