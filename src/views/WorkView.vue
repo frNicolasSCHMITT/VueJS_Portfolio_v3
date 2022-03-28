@@ -16,27 +16,27 @@ export default {
           id: 1, 
           title: 'title: 1', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description: 1' },
+          desc: 'description 1: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' },
         {
           id: 2, 
           title: 'title: 2', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description: 2' },
+          desc: 'description 2: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' },
         { 
           id: 3, 
           title: 'title: 3', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description: 3' },
+          desc: 'description 3: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' },
         { 
           id: 4, 
           title: 'title: 4', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description: 4' },
+          desc: 'description 4: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' },
         { 
           id: 5, 
           title: 'title: 5', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description: 5' }
+          desc: 'description 5: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' }
       ]
     }
   }
