@@ -1,7 +1,6 @@
 <template>
-  <section class="about-section">
-    <h1>About Me</h1>
-    
+  <h1>About Me</h1>
+  <section class="about-section">    
     <div class="about-group">
       <div class="about-image">
         <img src="https://previews.123rf.com/images/apoev/apoev2107/apoev210700033/171405527-default-avatar-photo-placeholder-gray-profile-picture-icon-business-man-illustration.jpg" alt="">

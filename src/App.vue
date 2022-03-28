@@ -32,6 +32,11 @@ a,
   }
 }
 
+nav{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 nav a.router-link-exact-active {
   color: var(--color-text);
   text-decoration: underline;
@@ -46,6 +51,9 @@ nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  text-align: center;
+  width: 20%;
+  font-size: 1.5rem;
 }
 
 nav a:first-of-type {

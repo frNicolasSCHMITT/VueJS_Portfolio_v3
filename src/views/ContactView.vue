@@ -1,7 +1,8 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <h1>Contact Me</h1>
+  <section class="contact-section">
+    
+  </section>
 </template>
 
 <style>
