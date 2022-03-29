@@ -16,14 +16,19 @@ export default{
 <style scoped>
 
 .card{
-  min-height: 250px;
+  height: 250px;
   width: 400px;
   cursor: pointer;
+  margin-bottom: 25px;
 }
 
 .card-title{
   text-align: center;
   margin: 10px 0;
+  color: hsla(160, 100%, 37%, 1);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: 1.5rem;
 }
 
 .card-desc{
@@ -38,6 +43,7 @@ export default{
 .card-img{
   z-index: -1;
   width: 100%;
+  max-height: 250px;
   position: absolute;
   top: 0;
   right: 0;
