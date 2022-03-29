@@ -1,6 +1,6 @@
 <script>
 export default{
-  props: ['title', 'img', 'desc']
+  props: ['title', 'img', 'desc', 'link']
 }
 </script>
 
@@ -16,7 +16,7 @@ export default{
 <style scoped>
 
 .card{
-  height: 300px;
+  min-height: 250px;
   width: 400px;
   cursor: pointer;
 }

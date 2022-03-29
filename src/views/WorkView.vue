@@ -1,42 +1,69 @@
 <script>
 import WorkObject from '@/components/WorkObject.vue'
-// import WorkExample from '@/components/WorkExample.vue'
-// import WorkObject_1 from '@/components/WorkObjects/WorkObject_1.vue'
+import WorkDisplay from '@/components/WorkDisplay.vue'
 
 export default {
   components: {
     WorkObject,
-    // WorkExample,
-    // WorkObject_1,
+    WorkDisplay,
+  },
+  methods: {
+    DisplayItem(id) {
+      this.displays[0].title = this.works[id].title,
+      this.displays[0].img = this.works[id].img,
+      this.displays[0].desc = this.works[id].desc,
+      this.displays[0].link = this.works[id].link;
+      // console.log(this.works[id]);
+      // console.log(this.displays[0]);
+    }
   },
   data() {
     return {
       works: [
         { 
-          id: 1, 
+          id: 0, 
           title: 'title: 1', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description 1: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' },
+          desc: 'description 1: Short description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!',
+          link:'#',
+        },
         {
-          id: 2, 
+          id: 1, 
           title: 'title: 2', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description 2: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' },
+          desc: 'description 2: Short description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!',
+          link:'#',
+        },
         { 
-          id: 3, 
+          id: 2, 
           title: 'title: 3', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description 3: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' },
+          desc: 'description 3: Short description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!',
+          link:'#',
+        },
         { 
-          id: 4, 
+          id: 3, 
           title: 'title: 4', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description 4: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' },
+          desc: 'description 4: Short description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!',
+          link:'#',
+        },
         { 
-          id: 5, 
+          id: 4, 
           title: 'title: 5', 
           img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description 5: Sort description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!' }
+          desc: 'description 5: Short description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!',
+          link:'#',
+        }
+      ],
+      displays: [
+        {
+        id: 0,
+        title: 'Choose a project',
+        img: '',
+        desc: 'Click on a project below to display it here',
+        link:'none',
+        }
       ]
     }
   }
@@ -46,30 +73,28 @@ export default {
 <template>
   <h1>Some creations</h1>
   <section class="work-section">
-    <div class="work-display">
-      <div class="work-display-image"></div>
-      <div class="work-display-text">
-        <div class="work-display-name"></div>
-        <div class="work-display-info"></div>
-        <div class="work-display-link"></div>
-      </div>
-    </div>
+    <WorkDisplay class="work-display"
+      v-for="display in displays"
+      :key="display.id"
+      :title="display.title"
+      :img="display.img"
+      :desc="display.desc"
+      :link="display.link"
+    />
+
     <div class="work-nav">
       <div class="work-object" 
         v-for="work in works"
         :key="work.id"
+        @click="DisplayItem(work.id)"
       >
       <WorkObject
         :title="work.title"
         :img="work.img"
         :desc="work.desc"
+        :link="work.link"
       />
       </div>
-      <!-- <div class="work-object"><WorkExample /></div>
-      <div class="work-object"><WorkExample /></div>
-      <div class="work-object"><WorkExample /></div>
-      <div class="work-object"><WorkExample /></div>
-      <div class="work-object"><WorkExample /></div> -->
     </div>  
   </section>
 </template>
@@ -78,13 +103,6 @@ export default {
 .work-section{
   width: 100%;
   overflow: hidden;
-}
-
-.work-display{
-  background-color: hsla(160, 100%, 37%, 0.5);
-  height: 500px;
-  width: 90%;
-  margin: 0 5% 20px;
 }
 
 .work-nav{
