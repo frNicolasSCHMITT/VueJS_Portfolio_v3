@@ -33,9 +33,6 @@
 
 <style scoped>
 
-.about-section{
-  width: 100vw;
-}
 
 .about-group{
   display: flex;
