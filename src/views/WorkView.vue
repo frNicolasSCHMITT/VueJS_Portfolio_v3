@@ -135,6 +135,12 @@ export default {
 
 .work-object{
   margin: 10px;
+  cursor: pointer;
+}
+
+.work-object:hover{
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 189, 126, 1);
 }
 
 </style>

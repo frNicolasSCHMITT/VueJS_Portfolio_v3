@@ -129,9 +129,12 @@ export default {
 
 <template>
   <h1>My Skills</h1>
+  <div class="title-group">
+    <h2>Languages</h2>
+    <h2 class="text-right">Frameworks & Libraries</h2>
+  </div>
   <section class="skill-section">
     <div class="skill-group">
-      <h2>Languages</h2>
       <SkillItem class="skill-pair"
         v-for="language in languages"
         :key="language.id"
@@ -142,7 +145,6 @@ export default {
       />  
     </div>
     <div class="skill-group">
-      <h2 class="text-right">Frameworks & Libraries</h2>
       <SkillItem class="skill-pair reverse"
         v-for="librarie in libraries"
         :key="librarie.id"
@@ -170,18 +172,28 @@ export default {
 
 <style>
 
+.title-group{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px rgba(0, 189, 126, 1);
+  margin: 0 5%;
+  padding: 10px;
+}
+
 .skill-section{
   width: 90%;
-  margin: 5%;
+  margin: 0 5%;
   display: flex;
 }
 
 .skill-group{
-  width: 50%;
+  width: 49%;
+  cursor: help;
+  /* cursor: default; */
 }
 
-.text-right{
-  text-align: right;
+.skill-group:first-child{
+  margin-right: 2%;
 }
 
 .text-center{
@@ -202,16 +214,21 @@ export default {
   justify-content: space-around;
   align-items: center;
   margin: 25px 0;
+  padding: 10px 0;
 }
 
 h2{
   color: rgba(0, 189, 126, 1);
   font-size: 2rem;
-  border-bottom: solid 1px rgba(0, 189, 126, 1);
 }
 
 .reverse{
   flex-direction: row-reverse;
+}
+
+.skill-pair:not(:hover){
+  box-shadow: 0 0 20px rgba(0, 189, 126, 1) inset;
+  border-radius: 10px;
 }
 
 .skill-pair:not(:hover) .svg-color{
@@ -239,10 +256,17 @@ h2{
 }
 
 .tool-pair{
-  width: 25%;
+  width: 24%;
   min-width: 200px;
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
+  cursor: help;
+  /* cursor: default; */
+}
+
+.tool-pair:not(:last-child){
+  margin-right: 1%;
 }
 
 .tool-text{

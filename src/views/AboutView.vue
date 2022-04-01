@@ -49,7 +49,7 @@
 img{
   width: 100%;
   border-radius: 20px;
-  border: hsla(160, 100%, 37%, 0.5) 5px groove;
+  box-shadow: 0 0 20px rgba(0, 189, 126, 1);
 }
 
 .about-text{

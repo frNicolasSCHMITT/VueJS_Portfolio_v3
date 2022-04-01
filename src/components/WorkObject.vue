@@ -18,7 +18,6 @@ export default{
 .card{
   height: 250px;
   width: 400px;
-  cursor: pointer;
   margin-bottom: 25px;
 }
 
