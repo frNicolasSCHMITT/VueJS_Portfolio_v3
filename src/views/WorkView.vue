@@ -110,6 +110,8 @@ export default {
 .work-section{
   width: 100%;
   overflow: hidden;
+  /* display: flex;
+  flex-direction: column-reverse; */
 }
 
 .work-nav{
@@ -119,9 +121,6 @@ export default {
   overflow-x: auto;
   overflow-y: hidden;
 
-  /* firefox */
-  scrollbar-color: hsla(160, 100%, 37%, 1) hsla(160, 100%, 37%, 0.5);
-  scrollbar-width: thin;
 }
 
 /* chrome */
@@ -131,6 +130,7 @@ export default {
 }
 .work-nav::-webkit-scrollbar-thumb{
   background: hsla(160, 100%, 37%, 1);
+  border-radius: 5px;
 }
 
 .work-object{

@@ -184,10 +184,13 @@ export default {
   width: 90%;
   margin: 0 5%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill-group{
   width: 49%;
+  min-width: 400px;
   cursor: help;
   /* cursor: default; */
 }
@@ -257,7 +260,7 @@ h2{
 
 .tool-pair{
   width: 24%;
-  min-width: 200px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   padding: 10px 0;
