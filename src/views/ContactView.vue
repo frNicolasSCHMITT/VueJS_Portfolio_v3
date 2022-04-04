@@ -1,4 +1,7 @@
 <script>
+
+import emailjs from '@emailjs/browser';
+
 export default {
   data() {
     return {
@@ -7,6 +10,16 @@ export default {
       purpose: '',
       message: '',
     }
+  },
+  methods: {
+    sendEmail() {
+      emailjs.sendForm('service_c283uon', 'template_y2tl2tt', this.$refs.form, 'te7xTOi0jRea5U95N')
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
+    }
   }
 }
 </script>
@@ -14,24 +27,24 @@ export default {
 <template>
   <h1>Contact Me</h1>
   <section class="contact-section">
-    <form action="" method="post">
+    <form ref="form" @submit.prevent="sendEmail">
       <div class="input-group">
         <label for="name">Name / Designation</label>
-        <input v-model="name" placeholder="Who are you ?">
+        <input name="name" v-model="name" placeholder="Who are you ?">
         <p>
           {{name}}
         </p>
       </div>
       <div class="input-group">
         <label for="contact">Contact Information</label>
-        <input v-model="contact" placeholder="How to contact you back ?">
+        <input name="contact" v-model="contact" placeholder="How to contact you back ?">
         <p>
           {{contact}}
         </p>
       </div>
       <div class="input-group">
         <label for="purpose">Message Purpose</label>
-        <select v-model="purpose">
+        <select name="purpose" v-model="purpose">
           <option disabled value=""> What is the purpose of your message ?</option>
           <option>Business opportunity</option>
           <option>Recruitment proposal</option>
@@ -43,7 +56,7 @@ export default {
       </div>
       <div class="input-group">
         <label for="message">Message Content</label>
-        <textarea v-model="message" placeholder="What is your message for me ?"></textarea>
+        <textarea name="message" v-model="message" placeholder="What is your message for me ?"></textarea>
         <p>
           {{message}}
         </p>
