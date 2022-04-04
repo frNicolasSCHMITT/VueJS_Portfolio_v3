@@ -14,7 +14,7 @@ export default {
 <template>
   <h1>Contact Me</h1>
   <section class="contact-section">
-    <form action="Form.php" method="post">
+    <form action="" method="post">
       <div class="input-group">
         <label for="name">Name / Designation</label>
         <input v-model="name" placeholder="Who are you ?">
