@@ -29,21 +29,21 @@ export default {
           id: 1,  
           boundclass: 'skill-text',
           name: 'CSS 3', 
-          text: 'While I do know how to use CSS libraries & frameworks I prefer to use native functions like flexbox, keyframes and media-queries to style my websites. I look especially for maximum compatibility on mobile formats',
+          text: 'I work with native or preprocessed CSS like Sass / Scss with focus on functions like flexbox and media-queries for responsive design and maximum compatibility on mobile formats',
           icon: '<svg xmlns="http://www.w3.org/2000/svg" aria-label="CSS3" role="img" viewBox="0 0 512 512"><title>CSS 3</title><path class="svg-color" fill="#264de4" d="M72 460L30 0h451l-41 460-184 52"/><path class="svg-color" fill="#2965f1" d="M256 37V472l149-41 35-394"/><path fill="#ebebeb" d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382"/><path fill="#fff" d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z"/></svg>',
         },
         { 
           id: 2,  
           boundclass: 'skill-text',
           name: 'JavaScript', 
-          text: 'I extensively use JavaScript mainly for DOM manipulation and dynamic interface, but also request handling with AJAX or PWA creation. I train regularly by making browser games or applications',
+          text: 'I extensively use JavaScript mainly for dynamic interface but also request handling with AJAX or PWA creation. I train regularly by making browser games or applications',
           icon: '<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><title>JavaScript</title><path class="svg-color" d="M0 0h256v256H0V0z" fill="#F7DF1E"/><path class="color-white" d="M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574"/></svg>',
         },
         { 
           id: 3,  
           boundclass: 'skill-text',
           name: 'PHP', 
-          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus numquam temporibus soluta voluptate beatae excepturi quibusdam animi accusamus veritatis nemo itaque harum debitis vitae ea, dolore quae ipsa repudiandae earum.',
+          text: 'I\'m using PHP as my main back-end / server side language, mostly in conjunction with MySql databases',
           icon: '<svg viewBox="0 -61 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><title>PHP</title><g fill-rule="evenodd"><ellipse class="svg-color" fill="#8993BE" cx="128" cy="66.63" rx="128" ry="66.63"/><path class="color-white" d="M35.945 106.082l14.028-71.014H82.41c14.027.877 21.041 7.89 21.041 20.165 0 21.041-16.657 33.315-31.562 32.438H56.11l-3.507 18.411H35.945zm23.671-31.561L64 48.219h11.397c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.52zM100.192 87.671l14.027-71.013h16.658l-3.507 18.41h15.78c14.028.877 19.288 7.89 17.535 16.658l-6.137 35.945h-17.534l6.137-32.438c.876-4.384.876-7.014-5.26-7.014H124.74l-7.89 39.452h-16.658zM153.425 106.082l14.027-71.014h32.438c14.028.877 21.042 7.89 21.042 20.165 0 21.041-16.658 33.315-31.562 32.438h-15.781l-3.507 18.411h-16.657zm23.67-31.561l4.384-26.302h11.398c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.521z" fill="#232531"/></g></svg>',
         },
         { 
@@ -218,6 +218,7 @@ export default {
   align-items: center;
   margin: 25px 0;
   padding: 10px 0;
+  min-height: 200px;
 }
 
 h2{
