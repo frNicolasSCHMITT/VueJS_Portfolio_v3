@@ -110,14 +110,14 @@ export default {
           id: 2, 
           boundclass: 'tool-text', 
           name: 'Figma', 
-          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus numquam temporibus soluta voluptate beatae excepturi quibusdam animi accusamus veritatis nemo itaque harum debitis vitae ea, dolore quae ipsa repudiandae earum.',
+          text: 'I\'m doing my websites wireframes with Figma as graphics editor and prototyping tool',
           icon: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Figma</title><g fill="none" fill-rule="evenodd" transform="translate(4)"><circle class="svg-color" cx="12" cy="12" r="4" fill="#19BCFE"/><path class="svg-color" fill="#09CF83" d="M4,24 C6.209139,24 8,22.209139 8,20 C8,19.3969461 8,18.0636128 8,16 C6.20303877,16 4.86970543,16 4,16 C1.790861,16 0,17.790861 0,20 C0,22.209139 1.790861,24 4,24 Z"/><path class="svg-color" fill="#A259FF" d="M4,16 C4.73637967,16 6.069713,16 8,16 L8,8 C6.069713,8 4.73637967,8 4,8 C1.790861,8 0,9.790861 0,12 C0,14.209139 1.790861,16 4,16 Z"/><path class="svg-color" fill="#F24E1E" d="M4,8 C4.73637967,8 6.069713,8 8,8 L8,0 C6.069713,0 4.73637967,0 4,0 C1.790861,0 0,1.790861 0,4 C0,6.209139 1.790861,8 4,8 Z"/><path class="svg-color" fill="#FF7262" d="M12,8 L8,8 L8,8 L8,0 L12,0 L12,0 C14.209139,0 16,1.790861 16,4 C16,6.209139 14.209139,8 12,8 Z"/></g></svg>',
         },
         { 
           id: 3, 
           boundclass: 'tool-text', 
           name: 'Adobe Photoshop', 
-          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus numquam temporibus soluta voluptate beatae excepturi quibusdam animi accusamus veritatis nemo itaque harum debitis vitae ea, dolore quae ipsa repudiandae earum.',
+          text: 'I\'m using Adobe Photoshop for website prototyping and image modification',
           icon: '<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>Adobe Photoshop</title><path class="svg-color" d="M3.167,3.517H28.833V28.483H3.167Z" fill="#0c0824"/><path class="svg-color" d="M3.167,3.517H28.833V28.483H3.167ZM2,29.65H30V2.35H2Zm18.877-16.1c-.922,0-1.237.467-1.237.852,0,.42.21.712,1.447,1.353,1.832.887,2.4,1.738,2.4,2.987,0,1.867-1.423,2.87-3.348,2.87a5.076,5.076,0,0,1-2.392-.5c-.082-.035-.093-.093-.093-.187V19.208c0-.117.058-.152.14-.093a4.33,4.33,0,0,0,2.345.688c.922,0,1.307-.385,1.307-.91,0-.42-.268-.793-1.447-1.4-1.657-.793-2.345-1.6-2.345-2.94,0-1.505,1.178-2.753,3.22-2.753a5.365,5.365,0,0,1,2.088.327.258.258,0,0,1,.117.233v1.6c0,.093-.058.152-.175.117a3.941,3.941,0,0,0-2.03-.525ZM10.843,14.938c.268.023.478.023.945.023,1.365,0,2.648-.478,2.648-2.333,0-1.482-.922-2.228-2.473-2.228-.467,0-.91.023-1.12.035Zm-2.077-6.2c0-.082.163-.14.257-.14.747-.035,1.855-.058,3.01-.058,3.232,0,4.492,1.773,4.492,4.037,0,2.963-2.147,4.235-4.783,4.235-.443,0-.595-.023-.91-.023v4.48c0,.093-.035.14-.14.14H8.907c-.093,0-.14-.035-.14-.14V8.743Z" fill="#31c5f0"/></svg>',
         },
       ],
@@ -191,8 +191,6 @@ export default {
 .skill-group{
   width: 49%;
   min-width: 400px;
-  cursor: help;
-  /* cursor: default; */
 }
 
 .skill-group:first-child{
