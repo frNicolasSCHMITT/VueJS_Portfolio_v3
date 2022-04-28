@@ -27,6 +27,7 @@ export default {
 <template>
   <h1>Contact Me</h1>
   <section class="contact-section">
+    <img src="/src/assets/img/logosigmaNico.png" alt="logo">
     <form ref="form" @submit.prevent="sendEmail">
       <div class="input-group">
         <label for="name">Name / Designation</label>
@@ -70,9 +71,13 @@ export default {
 
 .contact-section{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contact-section img{
+  max-width: 40%;
+  min-width: 200px;
 }
 
 .contact-section form{
@@ -116,6 +121,12 @@ export default {
 .form-submit:hover {
   background-color: transparent;
   box-shadow: 0 0 20px rgba(0, 189, 126, 1);
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+    flex-direction: column;
+  }
 }
 
 </style>
