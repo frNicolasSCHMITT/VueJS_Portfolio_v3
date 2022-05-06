@@ -89,14 +89,14 @@ main {
   width: 100%;
   border-radius: 50%;
   z-index: -1;
-  animation: 5s crescent linear infinite alternate;
+  animation: 4s crescent linear infinite alternate;
 }
 
 .moon img {
   width: 100%;
   height: 100%;
   /* mix-blend-mode: overlay; */
-  animation: 5s reveal linear infinite alternate;
+  animation: 4s reveal linear infinite alternate;
 }
 
 @media (max-width: 992px) {
