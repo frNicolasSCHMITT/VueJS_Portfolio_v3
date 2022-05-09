@@ -68,7 +68,7 @@ export default {
         id: 0,
         title: 'Choose a project',
         img: '',
-        desc: 'Click on a project below to display it here',
+        desc: 'Click on a project to display it here',
         link:'none',
         }
       ]
@@ -110,8 +110,8 @@ export default {
 .work-section{
   width: 100%;
   overflow: hidden;
-  /* display: flex;
-  flex-direction: column-reverse; */
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .work-nav{
@@ -134,13 +134,13 @@ export default {
 }
 
 .work-object{
-  margin: 10px;
+  margin: 30px;
   cursor: pointer;
 }
 
-.work-object:hover{
+/* .work-object:hover{
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 189, 126, 1);
-}
+} */
 
 </style>
