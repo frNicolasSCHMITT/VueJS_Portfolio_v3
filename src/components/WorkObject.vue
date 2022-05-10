@@ -13,6 +13,7 @@ export default{
 <template>
   <div class="box box-1">
     <div class="cover">
+      <p class="box-title">{{ title }}</p>
       <img :src="img" :alt="title">
     </div>
     <button>
@@ -23,13 +24,35 @@ export default{
 
 <style scoped>
 
+.box-title{
+  text-align: center;
+  color: rgba(0, 189, 126, 1);
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
 img {
     height: 150px;
 }
 
-img:hover{
+.box:hover img{
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 189, 126, 1);
+}
+
+.box:hover .box-title{
+  animation: 1s showing linear infinite alternate;
+  animation-iteration-count: 1;
+  opacity: 1;
+}
+
+@keyframes showing{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 button {

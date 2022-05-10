@@ -90,6 +90,10 @@ main {
   border-radius: 50%;
   z-index: -1;
   animation: 4s crescent linear infinite alternate;
+  animation-iteration-count: 1;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #f9f3f2, 0 0 80px 8px #C7938B;
+  background-color: #efdbd8;  
 }
 
 .moon img {
@@ -97,6 +101,7 @@ main {
   height: 100%;
   /* mix-blend-mode: overlay; */
   animation: 4s reveal linear infinite alternate;
+  animation-iteration-count: 1;
 }
 
 @media (max-width: 992px) {
@@ -105,7 +110,11 @@ main {
     height: 250px;
   }
   .moon::before {
-    animation: 5s crescent-mobile linear infinite alternate;
+    animation: 4s crescent-mobile linear infinite alternate;
+    animation-iteration-count: 1;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #f9f3f2, 0 0 80px 8px #C7938B;
+    background-color: #efdbd8;  
   }
 }
 

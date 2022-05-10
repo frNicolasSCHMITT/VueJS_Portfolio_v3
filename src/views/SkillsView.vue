@@ -172,6 +172,21 @@ export default {
 
 <style>
 
+.skill-pair:hover .skill-text, .skill-pair:hover .tool-text{
+  animation: 1s revealing linear infinite alternate;
+  animation-iteration-count: 1;
+  opacity: 1;
+}
+
+@keyframes revealing{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 .title-group{
   display: flex;
   justify-content: space-between;

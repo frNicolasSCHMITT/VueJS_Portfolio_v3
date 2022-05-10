@@ -33,6 +33,33 @@
 
 <style scoped>
 
+.about-image{
+  animation: 1s slideIn linear infinite alternate;
+  animation-iteration-count: 1;
+}
+
+.about-text{
+  animation: 1s revealText linear infinite alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideIn{
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes revealText{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .about-group{
   display: flex;
